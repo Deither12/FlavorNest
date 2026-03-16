@@ -1,0 +1,14 @@
+{
+  "name": "flavornest",
+  "private": true,
+  "version": "1.0.0",
+  "description": "FlavorNest — A Culinary Experience Studio",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

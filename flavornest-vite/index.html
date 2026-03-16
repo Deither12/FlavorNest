@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>FlavorNest — A Culinary Experience Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/src/style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="logo" href="#">Flavor<em>Nest</em></a>
+  <ul class="nav-links">
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#news">Latest</a></li>
+    <li><a href="#about">About us</a></li>
+  </ul>
+  <a class="nav-contact" href="#contact">Get in touch</a>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#projects" onclick="closeMenu()">Projects</a>
+  <a href="#news" onclick="closeMenu()">Latest</a>
+  <a href="#about" onclick="closeMenu()">About us</a>
+  <a href="#contact" onclick="closeMenu()">Get in touch</a>
+</div>
+
+<!-- HERO -->
+<div class="hero" id="hero">
+  <div class="hero-video">
+    <div class="hero-video-inner">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1800&q=80" alt="FlavorNest Kitchen"/>
+    </div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content reveal">
+    <div class="hero-eyebrow">A culinary experience studio</div>
+    <h1 class="hero-title">Giving form to<br/><em>flavors</em><br/>worth tasting</h1>
+    <div class="hero-bottom">
+      <p class="hero-desc">We craft extraordinary dining experiences — where culinary artistry meets warm, considered hospitality.</p>
+      <a class="hero-cta" href="#projects">Explore our work →</a>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<section class="projects-bg" id="projects">
+  <div class="section-header reveal">
+    <span class="section-heading">Recent projects</span>
+    <a class="view-all" href="#">View all</a>
+  </div>
+  <div class="projects-list">
+
+    <div class="project-row reveal" onmouseenter="cycleImgs(this)" onmouseleave="resetImgs(this)">
+      <div class="project-imgs">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=900&q=80" alt="The Ember Table"/>
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=900&q=80" alt="The Ember Table"/>
+        <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=900&q=80" alt="The Ember Table"/>
+      </div>
+      <div class="project-info">
+        <div class="proj-num">01 — 2024</div>
+        <h2 class="proj-title">The Ember Table</h2>
+        <p class="proj-tagline">— A fire-kissed dining ritual</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Brand Identity</span>
+          <span class="proj-tag">Interior Concept</span>
+          <span class="proj-tag">Menu Design</span>
+        </div>
+        <div class="proj-arrow">View project →</div>
+      </div>
+    </div>
+
+    <div class="project-row reveal d1" onmouseenter="cycleImgs(this)" onmouseleave="resetImgs(this)">
+      <div class="project-imgs">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80" alt="Maison Sève"/>
+        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=900&q=80" alt="Maison Sève"/>
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=900&q=80" alt="Maison Sève"/>
+      </div>
+      <div class="project-info">
+        <div class="proj-num">02 — 2024</div>
+        <h2 class="proj-title">Maison Sève</h2>
+        <p class="proj-tagline">— Where French craft meets open flame</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Experience Design</span>
+          <span class="proj-tag">Photography</span>
+          <span class="proj-tag">Digital</span>
+        </div>
+        <div class="proj-arrow">View project →</div>
+      </div>
+    </div>
+
+    <div class="project-row reveal d2" onmouseenter="cycleImgs(this)" onmouseleave="resetImgs(this)">
+      <div class="project-imgs">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=80" alt="Garden & Grain"/>
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=900&q=80" alt="Garden & Grain"/>
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=900&q=80" alt="Garden & Grain"/>
+      </div>
+      <div class="project-info">
+        <div class="proj-num">03 — 2025</div>
+        <h2 class="proj-title">Garden &amp; Grain</h2>
+        <p class="proj-tagline">— Seasonal cooking, honestly told</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Brand Strategy</span>
+          <span class="proj-tag">Packaging</span>
+          <span class="proj-tag">Wayfinding</span>
+        </div>
+        <div class="proj-arrow">View project →</div>
+      </div>
+    </div>
+
+    <div class="project-row reveal d3" onmouseenter="cycleImgs(this)" onmouseleave="resetImgs(this)">
+      <div class="project-imgs">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=900&q=80" alt="Sucré Noir"/>
+        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=900&q=80" alt="Sucré Noir"/>
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=900&q=80" alt="Sucré Noir"/>
+      </div>
+      <div class="project-info">
+        <div class="proj-num">04 — 2025</div>
+        <h2 class="proj-title">Sucré Noir</h2>
+        <p class="proj-tagline">— A dark and delicious patisserie</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Visual Identity</span>
+          <span class="proj-tag">Print</span>
+          <span class="proj-tag">Web Design</span>
+        </div>
+        <div class="proj-arrow">View project →</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT STRIP -->
+<div class="about-strip reveal" id="about">
+  <p>"We help restaurants communicate beautifully by bringing clarity and warmth to stories worth sharing."</p>
+  <a href="#contact">About us →</a>
+</div>
+
+<!-- NEWS -->
+<section id="news">
+  <div class="section-header reveal">
+    <span class="section-heading">Newsworthy</span>
+    <a class="view-all" href="#">View all</a>
+  </div>
+  <div class="news-grid">
+    <div class="news-card reveal">
+      <div class="news-img">
+        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=700&q=80" alt="Brand Identity"/>
+      </div>
+      <div class="news-cat">Brand Identity</div>
+      <div class="news-title">A refined new look for our seasonal tasting menu — balancing heritage and modernity</div>
+    </div>
+    <div class="news-card reveal d1">
+      <div class="news-img">
+        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=700&q=80" alt="Experience"/>
+      </div>
+      <div class="news-cat">Experience</div>
+      <div class="news-title">A new private dining concept for guests who want more than just a meal</div>
+    </div>
+    <div class="news-card reveal d2">
+      <div class="news-img">
+        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=700&q=80" alt="Digital"/>
+      </div>
+      <div class="news-cat">Digital</div>
+      <div class="news-title">Relaunching our digital presence — a web experience as considered as the food itself</div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap" id="contact">
+  <div class="marquee-track">
+    <span class="marquee-item">Want to work together?</span>
+    <span class="marquee-item">Reserve a table</span>
+    <span class="marquee-item">Get in touch</span>
+    <span class="marquee-item">Commission a menu</span>
+    <span class="marquee-item">Want to work together?</span>
+    <span class="marquee-item">Reserve a table</span>
+    <span class="marquee-item">Get in touch</span>
+    <span class="marquee-item">Commission a menu</span>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">Flavor<em>Nest</em></div>
+      <p class="footer-about">A culinary experience studio crafting brands, spaces, and stories for restaurants and hotels that believe in the art of the table.</p>
+      <div class="nl-form">
+        <input class="nl-input" type="email" placeholder="Join our newsletter"/>
+        <button class="nl-btn" id="nlBtn">Subscribe</button>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-head">Navigate</div>
+      <ul class="footer-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#news">Latest</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-head">Contact</div>
+      <ul class="footer-links">
+        <li><a href="mailto:hello@flavornest.co">hello@flavornest.co</a></li>
+        <li><a href="tel:+12125550192">+1 212 555 0192</a></li>
+        <li class="footer-address-inline">12 Culinary Row<br/>New York, NY 10013</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-hours">Mon–Fri, 12:00–23:00 · Sat–Sun, 11:00–24:00</div>
+    <div class="footer-social">
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">X.com</a>
+    </div>
+    <div class="footer-copy">© 2026 FlavorNest · Privacy Policy</div>
+  </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
